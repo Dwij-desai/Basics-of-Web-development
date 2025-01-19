@@ -1,0 +1,44 @@
+Here's the information about semantic HTML tags as notes:
+
+Better Semantic HTML Tags:
+
+1. HEADER
+    - Used for introductory content or navigation links
+    - Typically contains navigation menus, logos, and header information
+
+2. NAV
+    - Represents a navigation menu
+    - Used for major navigation blocks on the site
+    
+3. MAIN
+    - Contains the central content of the document
+    - Should be unique to the document
+    
+4. ARTICLE
+    - Represents a self-contained composition
+    - Could be a blog post, news story, or forum post
+    
+5. SECTION
+    - Represents a standalone section of content
+    - Usually contains a heading
+    
+6. ASIDE
+    - Contains content related to surrounding content
+    - Often used for sidebars or pull quotes
+    
+7. FIGURE
+    - Used for self-contained content like images, diagrams
+    - Often paired with FIGCAPTION for descriptions
+    
+8. FOOTER
+    - Contains footer information
+    - Usually has copyright info, contact details, etc.
+    
+9. ADDRESS
+    - Contains contact information for the page or article
+
+These tags help improve:
+- SEO (Search Engine Optimization)
+- Accessibility
+- Code readability
+- Document structure
