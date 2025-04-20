@@ -1,0 +1,14 @@
+myCont (existing div with id="cont")
+└── main (div.product)
+    ├── box1 (div.images)
+    │   ├── i1 (div) - navy blue background, spans 2 columns
+    │   ├── i2 (div) - dark red background
+    │   └── i3 (div) - bright red background
+    │
+    └── box2 (div.details)
+        ├── a1 (div) - cream background
+        ├── a2 (div) - purple background
+        └── a3 (div) - dark background
+            ├── b1 (div) - cream square (50x50px)
+            ├── b2 (div) - cream square (50x50px)
+            └── b3 (div) - cream square (50x50px)

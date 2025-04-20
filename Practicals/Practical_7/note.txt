@@ -1,0 +1,8 @@
+arrow fuction allows points to world class
+    ==> so you can not use 'this' and 'arrow function' at the same time
+
+constractor function:-
+    ==>  only add 
+
+--> 'This' will alway point to it's parant class
+

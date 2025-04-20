@@ -1,0 +1,11 @@
+div {
+  border: 2px solid black;
+}
+#cont {
+  background-color: transparent;
+}
+
+.product {
+  position: relative;
+  z-index: 2;
+}

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume - Dwij Desai</title>
+    <style>
+      /* Global Styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 60px auto;
+        padding: 0 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+
+      /* Loading Animation */
+      .loading-screen {
+        position: fixed;
+        inset: 0;
+        background: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        animation: fadeOut 0.5s ease 4s forwards;
+      }
+
+      .loading-line {
+        width: 2px;
+        height: 100px;
+        background: #007bff;
+        animation: lineAnimation 1s ease-in-out infinite;
+      }
+
+      @keyframes lineAnimation {
+        0%,
+        100% {
+          transform: scaleY(0.3);
+        }
+        50% {
+          transform: scaleY(1);
+        }
+      }
+
+      @keyframes fadeOut {
+        to {
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
+
+      .content {
+        opacity: 0;
+        animation: fadeIn 0.5s ease 4s forwards;
+      }
+
+      @keyframes fadeIn {
+        to {
+          opacity: 1;
+        }
+      }
+
+      /* Header Styles */
+      header {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      header h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        color: #007bff;
+      }
+
+      header p {
+        font-size: 1rem;
+        color: #555;
+      }
+
+      /* Navigation Styles */
+      nav {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      nav a {
+        margin: 0 10px;
+        color: #007bff;
+        text-decoration: none;
+        transition: all 0.3s ease;
+      }
+
+      nav a:hover {
+        color: #0056b3;
+        text-decoration: underline;
+      }
+
+      /* Section Styles */
+      section {
+        margin-bottom: 40px;
+        padding: 20px;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+      }
+
+      section:nth-child(odd) {
+        background-color: rgba(0, 123, 255, 0.1);
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        color: #007bff;
+      }
+
+      p {
+        margin-bottom: 10px;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto 20px;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 2px solid #007bff;
+        transition: transform 0.3s ease;
+      }
+
+      img:hover {
+        transform: scale(1.05);
+      }
+
+      /* Table Styles */
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        background: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 12px rgba(0, 123, 255, 0.1);
+      }
+
+      th {
+        background-color: #007bff;
+        color: white;
+        font-weight: 500;
+        padding: 16px;
+        text-align: left;
+      }
+
+      td {
+        padding: 16px;
+        border-bottom: 1px solid rgba(0, 123, 255, 0.1);
+      }
+
+      tr:last-child td {
+        border-bottom: none;
+      }
+
+      tr:hover {
+        background-color: rgba(0, 123, 255, 0.05);
+        transition: background-color 0.3s ease;
+      }
+
+      /* Responsive Styles */
+      @media (max-width: 600px) {
+        body {
+          margin: 30px auto;
+          padding: 0 15px;
+        }
+
+        nav a {
+          display: block;
+          margin: 5px 0;
+        }
+
+        table {
+          font-size: 14px;
+        }
+
+        th,
+        td {
+          padding: 12px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+      <div class="loading-line"></div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+      <header>
+        <h1>Dwij Desai</h1>
+        <p>Software Engineer</p>
+      </header>
+
+      <nav>
+        <a href="#about">About Me</a> | <a href="#education">Education</a> |
+        <a href="#experience">Experience</a> | <a href="#skills">Skills</a> |
+        <a href="#projects">Projects</a> |
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <section id="about">
+        <h2>About Me</h2>
+        <img src="https://i.ibb.co/8K5S8hB/portfolio.jpg" alt="Dwij Desai" />
+        <p>
+          Hi, I'm Dwij Desai, a passionate and dedicated individual with a keen
+          interest in technology and software development.
+        </p>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <ul>
+          <li>
+            Bachelor of Engineering in Computer Engineering from L.J. Institute
+            of Engineering and Technology.
+          </li>
+        </ul>
+      </section>
+
+      <section id="experience">
+        <h2>Experience</h2>
+        <ul>
+          <li>
+            Currently working as a Software Engineer Intern at Techno Identity
+            Solutions Pvt Ltd.
+          </li>
+        </ul>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>Proficient in Java, Python, HTML, CSS, JavaScript, and SQL.</li>
+          <li>Experienced with frameworks like React and Angular.</li>
+        </ul>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <table>
+          <tr>
+            <th>Project Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>Web Applications</td>
+            <td>Worked on various web applications.</td>
+          </tr>
+          <tr>
+            <td>Mobile Applications</td>
+            <td>Developed several mobile applications.</td>
+          </tr>
+          <tr>
+            <td>Software Tools</td>
+            <td>Created various software tools.</td>
+          </tr>
+        </table>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>
+          You can reach me via email at dwijdvd@gmail.com or connect with me on
+          <a href="https://www.linkedin.com/in/dwij-desai-797644276/"
+            >LinkedIn</a
+          >.
+        </p>
+      </section>
+    </div>
+  </body>
+</html>
